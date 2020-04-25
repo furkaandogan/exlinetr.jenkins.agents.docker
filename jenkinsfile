@@ -14,11 +14,12 @@ docker_image_build_push_pipeline {
     build:[
       remote:[
         address:'tcp://docker-agent.exlinetr.com:2376',
-        credentialId:'exlinetr-docker-agent-01'
+        credentialId:'docker-master-01'
       ]
     ],
     hub:[
-        address:
+        address:"registery.exlinetr.com",
+        credentialId:"registery-jenkins-user"
     ]
   ]
 }
