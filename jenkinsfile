@@ -13,7 +13,7 @@ docker_image_build_push_pipeline {
   docker=[
     build:[
       remote:[
-        address:'tcp://docker-agent.exlinetr.com:2376',
+        address:'tcp://docker-cluster-master-01.exlinetr.com:2376',
         credentialId:'docker-master-01'
       ]
     ],
